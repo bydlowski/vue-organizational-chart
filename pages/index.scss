@@ -1,0 +1,127 @@
+.organograma {
+    text-align: center;
+    .organograma-container {
+      min-height: 150px;
+      background-color: #FFF;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+    }
+    .levels {
+      display: flex;
+      justify-content: center;
+      margin: 30px 15px 20px 15px;
+      position: relative;
+      .level-node {
+        width: 150px; 
+      }
+    }
+    .nodes {
+      width: 100%;
+      display: block;
+      .node-area {
+        display: inline-block;
+        min-width: 150px;
+        margin: 30px 15px 20px 15px;
+        position: relative;
+        .node-area-child {
+          width: 150px; 
+          // background: cyan; 
+          display: inherit;
+          
+        }
+      }
+    }
+    .child-nodes {
+      width: 100%;
+      display: block;
+      .child-node-area {
+        width: 150px; 
+        display: inline-block;
+        margin: 30px 15px 30px 15px;
+        position: relative;
+        .full-node {
+          width: 150px;
+          display: block;
+        }
+        .empty-node {
+          background: transparent;
+          padding: 0;
+        }
+      }
+      
+    }
+  }
+  .organograma-node {
+    padding: 15px;
+    // border: 2px solid #111;
+    // background: cyan; 
+  }
+  .top {
+    position: absolute;
+    top: -27px;
+    left: 50%;
+    bottom: 50%;
+    height: 50%;
+    width: 2px;
+    background-color: #111; 
+  }
+  .top-left {
+    position: absolute;
+    top: -27px;
+    left: -25px;
+    height: 2px;
+    width: 100px;
+    background-color: #111; 
+  }
+  .top-left-big {
+    position: absolute;
+    top: -27px;
+    left: 0;
+    height: 2px;
+    width: 50%;
+    background-color: #111; 
+  }
+  .top-right {
+    position: absolute;
+    top: -27px;
+    right: -25px;
+    height: 2px;
+    width: 100px;
+    background-color: #111; 
+  }
+  .top-right-big {
+    position: absolute;
+    top: -27px;
+    right: 0;
+    height: 2px;
+    width: 50%;
+    background-color: #111; 
+  }
+  .top-sides {
+    position: absolute;
+    top: -27px;
+    right: -25px;
+    left: -25px;
+    height: 2px;
+    width: 200px;
+    background-color: #111; 
+  }
+  .top-sides-big {
+    position: absolute;
+    top: -27px;
+    right: 0;
+    left: -30px;
+    height: 2px;
+    width: calc(100% + 60px);
+    // width: 100%;
+    background-color: #111; 
+  }
+  .bottom {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    height: 50%;
+    width: 2px;
+    background-color: #111; 
+  }
